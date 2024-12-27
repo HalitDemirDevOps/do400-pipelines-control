@@ -4,9 +4,9 @@ node('nodejs') {
             url: 'https://github.com/HalitDemirDevOps/do400-pipelines-control'
     }
     stage('Backend Tests') {
-        sh 'node ./backend/test.js'
+        sh 'node ./simple-webapp/backend/test.js'
     }
     stage('Frontend Tests') {
-        sh 'node ./frontend/test.js'
+        sh 'node ./simple-webapp/frontend/test.js'
     }
 }
